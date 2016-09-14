@@ -1,27 +1,27 @@
 /* GET 'home' page */
-module.exports.pizzaLocationlist = function(req, res) {
-    res.render('locations-list', {
-        title: 'Loc8r - find a place to work with wifi',
+module.exports.pizzaList = function(req, res) {
+    res.render('pizza-list', {
+        title: 'PizzaFinder - find a place to find Pizza',
         pageHeader: {
-            title: 'Loc8r',
-            strapline: 'Find places to work with wifi near you!'
+            title: 'PizzaLocater',
+            strapline: 'Find Pizza'
         },
-        sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
+        sidebar: "Pizza is good.",
         locations: [{
-            name: 'Starcups',
-            address: '125 High Street, Reading, RG6 1PS',
+            name: 'Pizza Hut',
+            address: '110 23rd St, Canyon, TX 79015',
             rating: 3,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
             distance: '100m'
         }, {
-            name: 'Cafe Hero',
-            address: '125 High Street, Reading, RG6 1PS',
+            name: 'Dominos Pizza',
+            address: '2310 9th Ave, Canyon, TX 79015',
             rating: 4,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
             distance: '200m'
         }, {
-            name: 'Burger Queen',
-            address: '125 High Street, Reading, RG6 1PS',
+            name: 'La Bella Pizza',
+            address: '700 23rd St, Canyon, TX 79015',
             rating: 2,
             facilities: ['Food', 'Premium wifi'],
             distance: '250m'
@@ -31,33 +31,33 @@ module.exports.pizzaLocationlist = function(req, res) {
 
 /* GET 'Location info' page */
 module.exports.pizzaLocationInfo = function(req, res) {
-    res.render('location-info', {
-        title: 'Starcups',
+    res.render('pizza-info', {
+        title: 'Pizza Hut',
         pageHeader: {
-            title: 'Starcups'
+            title: 'Pizza Hut'
         },
         sidebar: {
             context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.',
             callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
         },
         location: {
-            name: 'Starcups',
-            address: '125 High Street, Reading, RG6 1PS',
+            name: 'Pizza Hut',
+            address: '110 23rd St, Canyon, TX 79015',
             rating: 3,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
             coords: {
-                lat: 51.455041,
-                lng: -0.9690884
+                lat: 34.982300,
+                lng: -101.920045
             },
             openingTimes: [{
                 days: 'Monday - Friday',
-                opening: '7:00am',
-                closing: '7:00pm',
+                opening: '11:00am',
+                closing: '10:00pm',
                 closed: false
             }, {
                 days: 'Saturday',
-                opening: '8:00am',
-                closing: '5:00pm',
+                opening: '11:00am',
+                closing: '10:00pm',
                 closed: false
             }, {
                 days: 'Sunday',
