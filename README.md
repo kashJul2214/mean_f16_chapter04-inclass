@@ -18,10 +18,13 @@
 8 - Copy guts of Holmes' chapter to the loc8r folder
 
 9 - Make chapter modifications in loc8r folder
-    * Modify code to include additional list page of three (3) select pizza restaurants in Amarillo and/or Canyon
+    * Modify code to include additional list page of three (3) select pizza restaurants in Amarillo 
+      and/or Canyon
     * Modify code to develop attributes for each restaurant 
-    * Modify and/or Copy and Moidy the layout.jade, location-info.jade, and locations-list.jade files to accomplish tasks
-    * Create additional mixin that will also shade the background of each item in the locations-list for pizza restaurants different colors
+    * Modify and/or Copy and Moidy the layout.jade, location-info.jade, and locations-list.jade files 
+      to accomplish tasks
+    * Create additional mixin that will also shade the background of each item in the locations-list 
+      for pizza restaurants different colors
 
 10 - Push to github
 
