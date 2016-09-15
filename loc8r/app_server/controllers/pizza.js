@@ -6,24 +6,24 @@ module.exports.pizzaList = function(req, res) {
             title: 'PizzaLocater',
             strapline: 'Find Pizza'
         },
-        sidebar: "Pizza is good.",
+        sidebar: "Pizza is Delicious.",
         locations: [{
             name: 'Pizza Hut',
             address: '110 23rd St, Canyon, TX 79015',
             rating: 3,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+            facilities: ['Cool drinks', 'Food', 'Premium wifi'],
             distance: '100m'
         }, {
             name: 'Dominos Pizza',
             address: '2310 9th Ave, Canyon, TX 79015',
             rating: 4,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+            facilities: ['Cool drinks', 'Food', 'Premium wifi'],
             distance: '200m'
         }, {
             name: 'La Bella Pizza',
             address: '700 23rd St, Canyon, TX 79015',
             rating: 2,
-            facilities: ['Food', 'Premium wifi'],
+            facilities: ['Cool', 'Premium wifi'],
             distance: '250m'
         }]
     });
@@ -64,9 +64,9 @@ module.exports.pizzaLocationInfo = function(req, res) {
                 closed: true
             }],
             reviews: [{
-                author: 'Simon Holmes',
+                author: 'Mary Mata',
                 rating: 5,
-                timestamp: '16 July 2013',
+                timestamp: '14 September 2016',
                 reviewText: 'What a great place. I can\'t say enough good things about it.'
             }, {
                 author: 'Charlie Chaplin',
